@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { DetailProductComponent } from './detail-product/detail-product.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    DetailProductComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    //HomeComponent
+    DetailProductComponent
+  ],
 })
-export class AppModule { }
+export class AppModule {}
